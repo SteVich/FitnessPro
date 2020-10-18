@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="397dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="6dp"
+        android:adjustViewBounds="true"
+        android:foreground="#60000000"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.002"
+        app:srcCompat="@mipmap/chest_image" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@android:style/Widget.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="10dp"
+        android:text="@string/chest_triceps"
+        android:textColor="#E5E1EC"
+        android:textColorHint="#E3E3E3"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="151dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/roboto_black"
+        android:paddingLeft="10dp"
+        android:text="Total exercises - 12\nDuration - 80 minutes"
+        android:textColor="#E5E1EC"
+        android:textColorHint="#E3E3E3"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.14" />
+
+    <Button
+        android:id="@+id/angry_btn"
+        android:layout_width="90dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="48dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Start"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.545" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="397dp"
+        android:layout_height="158dp"
+        android:adjustViewBounds="true"
+        android:foreground="#40000000"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.01"
+        app:srcCompat="@mipmap/back_image" />
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@android:style/Widget.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="10dp"
+        android:text="@string/back_biceps"
+        android:textColor="#E5E1EC"
+        android:textColorHint="#E3E3E3"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textViewx9"
+        android:layout_width="151dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/roboto_black"
+        android:paddingLeft="10dp"
+        android:text="Total exercises - 10\nDuration - 70 minutes"
+        android:textColor="#E5E1EC"
+        android:textColorHint="#E3E3E3"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <Button
+        android:id="@+id/angry_btnx"
+        android:layout_width="90dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="48dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Start"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textViewx9"
+        app:layout_constraintVertical_bias="0.545" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="397dp"
+        android:layout_height="158dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:tint="#70000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.01"
+        app:srcCompat="@mipmap/shoulders_image"
+        tools:ignore="UseAppTint" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@android:style/Widget.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="10dp"
+        android:text="@string/shoulders_triceps"
+        android:textColor="#E5E1EC"
+        android:textColorHint="#E3E3E3"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textViewxb9"
+        android:layout_width="155dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/roboto_black"
+        android:paddingLeft="10dp"
+        android:text="Total exercises - 11\nDuration - 70 minutes"
+        android:textColor="#E5E1EC"
+        android:textColorHint="#E3E3E3"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.115" />
+
+    <Button
+        android:id="@+id/angry_btnx5"
+        android:layout_width="90dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="48dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Start"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/textViewxb9"
+        app:layout_constraintVertical_bias="0.545" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="397dp"
+        android:layout_height="158dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:tint="#80000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.025"
+        app:srcCompat="@mipmap/legs_image"
+        tools:ignore="UseAppTint" />
+
+    <TextView
+        android:id="@+id/textViewx6"
+        style="@android:style/Widget.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="10dp"
+        android:text="@string/legs_biceps"
+        android:textColor="#E5E1EC"
+        android:textColorHint="#E3E3E3"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/textViewxb10"
+        android:layout_width="155dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/roboto_black"
+        android:paddingLeft="10dp"
+        android:text="Total exercises - 12\nDuration - 80 minutes"
+        android:textColor="#E5E1EC"
+        android:textColorHint="#E3E3E3"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/textViewx6"
+        app:layout_constraintVertical_bias="0.115" />
+
+    <Button
+        android:id="@+id/angry_btnx6"
+        android:layout_width="90dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="48dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Start"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/textViewxb10"
+        app:layout_constraintVertical_bias="0.545" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/courage_to_change"
+        android:textSize="30dp"
+        android:text="be brave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

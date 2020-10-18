@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@mipmap/home_icon"
+            android:title="Home" />
+        <item
+            android:id="@+id/termsOfUse"
+            android:icon="@mipmap/terms_of_use_icon"
+            android:title="Terms Of Use" />
+        <item
+            android:id="@+id/about"
+            android:icon="@mipmap/iconfinder_about_2639759"
+            android:title="About" />
+    </group>
+
+    <item android:title="Social">
+        <menu>
+            <item
+                android:id="@+id/github"
+                android:icon="@mipmap/github"
+                android:title="Github" />
+        </menu>
+    </item>
+
+</menu>

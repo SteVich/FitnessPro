@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">FitnessPro</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="impoeert">Import</string>
+    <string name="gallery">Gallery</string>
+    <string name="slideshow">Slideshow</string>
+    <string name="tools">Tools</string>
+    <string name="hello_user">Hello, User!</string>
+    <string name="terms_of_use">TERMS OF USE</string>
+    <string name="attention">PLEASE READ THESE TERMS OF USE CAREFULLY BEFORE USING THIS APPLICATION.\n\nBy accessing or using this mobile application on any mobile phone, tablet, console or other device, you signify that you have read, understand and agree to be bound by these Terms of Use.</string>
+    <string name="important_notice_for_amateur_athletes">IMPORTANT NOTICE FOR AMATEUR ATHLETES</string>
+    <string name="importance_notice_content">YOU ARE RESPONSIBLE FOR ENSURING THAT YOUR USE OF OR PARTICIPATION IN THE ACTIVITIES OF THIS APPLICATION DOES NOT AFFECT YOUR ELIGIBILITY AS AN AMATEUR ATHLETE. PLEASE CHECK WITH YOUR AMATEUR ATHLETIC ASSOCIATION FOR THE RULES THAT APPLY TO YOU. CREATORS ARE NOT RESPONSIBLE OR LIABLE FOR YOUR USE OF THE APPLICATION RESULTING IN YOUR INELIGIBILITY AS AN AMATEUR ATHLETE.</string>
+    <string name="physical_activity_notice">PHYSICAL ACTIVITY NOTICE</string>
+    <string name="physycal_activity_notice_content">The Application may include features that promote physical activity. Consider the risks involved and consult with your medical professional before engaging in any physical activity. CREATORS is not responsible or liable for any injuries or damages you may sustain that result from your use of, or inability to use, the features of the Application.</string>
+    <string name="intellectual_property">INTELLECTUAL PROPERTY</string>
+    <string name="intellectual_property_content">All intellectual property in the Application (except for User Generated Content) is owned by Vitaliy Stefanchak.All content on the Platform (except for User Generated Content), including but not limited to text, software, scripts, code, designs, graphics, photos, sounds, music, videos, applications, interactive features and all other content is the proprietary property of Vitaliy Stefanchak.\nAll rights reserved.</string>
+    <string name="chest_triceps"><![CDATA[Chest & Triceps]]></string>
+    <string name="back_biceps"><![CDATA[Back & biceps]]></string>
+    <string name="shoulders_triceps"><![CDATA[Shoulders & Triceps]]></string>
+    <string name="legs_biceps"><![CDATA[Legs & Biceps]]></string>
+
+</resources>
