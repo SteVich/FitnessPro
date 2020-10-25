@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -11,10 +12,19 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.lifecycle.LifecycleObserver;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+import java.util.Objects;
+
+import timber.log.Timber;
+
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, LifecycleObserver {
+
+    long appLifeTime = 0L;
+    MyLocationListener myLocationListener;
+    private static final String key = "key";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +49,20 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        if (BuildConfig.DEBUG) {
+            Timber.plant(new Timber.DebugTree());
+        }
+
+        appLifeTime = System.currentTimeMillis();
+
+        myLocationListener = new MyLocationListener(this.getLifecycle());
+        Timber.e("onCreate method called");
+        
+        if(Objects.nonNull(savedInstanceState)){
+            String savedValue = (String) Objects.requireNonNull(savedInstanceState).get(key);
+            Timber.e("savedValue : %s", savedValue);
+        }
     }
 
     @Override
@@ -101,5 +125,57 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.replace(R.id.content_frame, fragment);
         ft.commit();
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        Timber.e("onSave method called");
+        
+        outState.putString(key, "value");
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Timber.e("onStart method called");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Timber.e("onResume method called");
+    }
+
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Timber.e("onPause method called");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Timber.e("onStop method called");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Timber.e("onDestroy method called");
+
+        appLifeTime = (System.currentTimeMillis() - appLifeTime) / 1000;
+
+        double time = (double) myLocationListener.secondsCount / (double) appLifeTime;
+
+        Timber.i("%s/%s. Z=%s", myLocationListener.secondsCount, appLifeTime, time*100);
+        Timber.i("Application life time in sec: %s", appLifeTime);
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Timber.e("onRestart method called");
     }
 }
