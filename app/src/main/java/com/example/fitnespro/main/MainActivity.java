@@ -1,5 +1,6 @@
-package com.example.fitnespro;
+package com.example.fitnespro.main;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -12,6 +13,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.fitnespro.R;
+import com.example.fitnespro.exercise.ExerciseActivity;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -101,5 +104,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.replace(R.id.content_frame, fragment);
         ft.commit();
+    }
+
+    public void openChestTricepsExerciseTraining(View view) {
+        Intent intent = new Intent(this, ExerciseActivity.class);
+        intent.putExtra("type", "ChestTriceps");
+        startActivity(intent);
     }
 }

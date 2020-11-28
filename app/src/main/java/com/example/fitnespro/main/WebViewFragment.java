@@ -1,4 +1,4 @@
-package com.example.fitnespro;
+package com.example.fitnespro.main;
 
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.webkit.WebViewClient;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import com.example.fitnespro.R;
 
 public class WebViewFragment extends Fragment {
     public WebView wv;
