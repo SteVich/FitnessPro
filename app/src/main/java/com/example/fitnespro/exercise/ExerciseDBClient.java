@@ -10,11 +10,12 @@ public class ExerciseDBClient {
 
     private final Context context;
     private static ExerciseDBClient exerciseDBClient;
-    private final ExerciseDatabase excerciseDatabase;
+    private final ExerciseDatabase exerciseDatabase;
 
     public ExerciseDBClient(Context context) {
         this.context = context;
-        excerciseDatabase = Room.databaseBuilder(context, ExerciseDatabase.class, "MyExercise").build();
+        exerciseDatabase = Room.databaseBuilder(context, ExerciseDatabase.class, "Exercise")
+                .allowMainThreadQueries().build();
     }
 
     public static synchronized ExerciseDBClient getInstance(Context mCtx) {
@@ -24,7 +25,7 @@ public class ExerciseDBClient {
         return exerciseDBClient;
     }
 
-    public ExerciseDatabase getExcerciseDatabase() {
-        return excerciseDatabase;
+    public ExerciseDatabase getExerciseDatabase() {
+        return exerciseDatabase;
     }
 }

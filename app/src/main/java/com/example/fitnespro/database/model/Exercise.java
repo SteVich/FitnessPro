@@ -15,8 +15,8 @@ public class Exercise implements Serializable {
     @ColumnInfo(name = "title")
     private String title;
 
-    @ColumnInfo(name = "imageUrl")
-    private String imageUrl;
+    @ColumnInfo(name = "imageId")
+    private int imageId;
 
     @ColumnInfo(name = "timeInMinutes")
     private int timeInMinutes;
@@ -43,12 +43,12 @@ public class Exercise implements Serializable {
         this.title = title;
     }
 
-    public String getImageUrl() {
-        return imageUrl;
+    public int getImageId() {
+        return imageId;
     }
 
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
+    public void setImageId(int imageId) {
+        this.imageId = imageId;
     }
 
     public int getTimeInMinutes() {

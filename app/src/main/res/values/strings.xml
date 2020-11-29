@@ -25,4 +25,6 @@
     <string name="shoulders_triceps"><![CDATA[Shoulders & Triceps]]></string>
     <string name="legs_biceps"><![CDATA[Legs & Biceps]]></string>
 
+    <string name="generic_text">%s</string>
+
 </resources>

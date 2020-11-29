@@ -11,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.fitnespro.R;
 import com.example.fitnespro.database.model.Exercise;
 
+import java.util.List;
+
 public class AddExerciseActivity extends AppCompatActivity {
 
     private EditText addTitle, addTimeInMinutes;
@@ -28,6 +30,7 @@ public class AddExerciseActivity extends AppCompatActivity {
         findViewById(R.id.add_button_submit).setOnClickListener(view -> saveExercise());
 
         type = getIntent().getStringExtra("type");
+        exerciseAdapter = (ExerciseAdapter) getIntent().getSerializableExtra("ExerciseAdapter");
     }
 
     private void saveExercise() {
@@ -54,12 +57,16 @@ public class AddExerciseActivity extends AppCompatActivity {
                 exercise.setTitle(sTitle);
                 exercise.setTimeInMinutes(Integer.parseInt(sTimeInMinutes));
                 exercise.setType(type);
+                exercise.setImageId(R.mipmap.fitness);
 
-                ExerciseDBClient.getInstance(getApplicationContext()).getExcerciseDatabase()
+                ExerciseDBClient.getInstance(getApplicationContext()).getExerciseDatabase()
                         .exerciseDao()
                         .insert(exercise);
 
-                ExerciseActivity.exerciseList.add(exercise);
+                List<Exercise> exercises = ExerciseActivity.exercises;
+                exercises.add(exercise);
+                exerciseAdapter.updateList(exercises);
+
                 return null;
             }
 

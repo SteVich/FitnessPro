@@ -45,6 +45,6 @@ public class ExerciseDiffUtilCallBack extends DiffUtil.Callback {
                 && oldEx.getTitle().equals(newEx.getTitle())
                 && oldEx.getType().equals(newEx.getType())
                 && oldEx.getTimeInMinutes() == newEx.getTimeInMinutes()
-                && nonNull(oldEx.getImageUrl()) && oldEx.getImageUrl().equals(newEx.getImageUrl());
+                && oldEx.getImageId() == newEx.getImageId();
     }
 }
