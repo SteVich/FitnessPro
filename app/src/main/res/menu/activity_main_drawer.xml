@@ -7,6 +7,14 @@
             android:icon="@mipmap/home_icon"
             android:title="Home" />
         <item
+            android:id="@+id/bmi"
+            android:icon="@mipmap/bmi"
+            android:title="BMI" />
+        <item
+            android:id="@+id/getImage"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Get Image" />
+        <item
             android:id="@+id/termsOfUse"
             android:icon="@mipmap/terms_of_use_icon"
             android:title="Terms Of Use" />

@@ -20,16 +20,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".exercise.ExerciseActivity"
             android:label="Show Exercises"
             android:parentActivityName=".main.MainActivity" />
-
         <activity
             android:name=".exercise.AddExerciseActivity"
             android:label="Add new exercise"
             android:parentActivityName=".exercise.ExerciseActivity" />
+        <activity
+            android:name=".bmi.BMIActivity"
+            android:label="BMI"
+            android:parentActivityName=".main.MainActivity" />
     </application>
 
 </manifest>

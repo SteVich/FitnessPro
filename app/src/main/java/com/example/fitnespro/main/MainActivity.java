@@ -1,6 +1,7 @@
 package com.example.fitnespro.main;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,7 +15,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.fitnespro.R;
+import com.example.fitnespro.bmi.BMIActivity;
 import com.example.fitnespro.exercise.ExerciseActivity;
+import com.example.fitnespro.image.ImageFragment;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -62,8 +65,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         if (id == R.id.home) {
             fragment = new HomeFragment();
+        } else if (id == R.id.bmi) {
+            Intent intent = new Intent(this, BMIActivity.class);
+            startActivity(intent);
         } else if (id == R.id.about) {
             fragment = new AboutFragment();
+        } else if (id == R.id.getImage) {
+            fragment = new ImageFragment();
         } else if (id == R.id.termsOfUse) {
             fragment = new TermsOfUseFragment();
         } else if (id == R.id.github) {
